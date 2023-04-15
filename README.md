@@ -3,8 +3,6 @@
 
 We plan to create a very interesting demo by combining [Segment Anything](https://github.com/facebookresearch/segment-anything) and a series of style transfer models! We will continue to improve it and create more interesting demos. **Interesting ideas, results, and contributions are warmly welcome!**
 
-**Contributions are welcomed.**
-
 ## Demo
 - Different contents can specify different styles in a style image. Left click to select an area and right click to exclude an area.
 
@@ -66,7 +64,7 @@ python -m pip install opencv-python
 
   * Command: *python transfer_any_style.py [-h] --content_path CONTENT_PATH --style_path STYLE_PATH [--output_dir OUTPUT_DIR] [--resize] [--keep_ratio]*
 
-  * Optional Arguments:
+  * Arguments:
     * --content_path: Path to a single content img
     * --style_path: Path to a single style img
     * --output_dir: Output path
