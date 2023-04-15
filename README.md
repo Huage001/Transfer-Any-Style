@@ -3,6 +3,8 @@
 
 We plan to create a very interesting demo by combining [Segment Anything](https://github.com/facebookresearch/segment-anything) and a series of style transfer models! We will continue to improve it and create more interesting demos. **Interesting ideas, results, and contributions are warmly welcome!**
 
+**Contributions are welcomed.**
+
 ## Demo
 - Different contents can specify different styles in a style image. Left click to select an area and right click to exclude an area.
 
