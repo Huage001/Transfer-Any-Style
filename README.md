@@ -52,7 +52,7 @@ python -m pip install opencv-python
 * Run the following command:
 
   ```shell
-  transfer_any_style.py \
+  python transfer_any_style.py \
   --content_path CONTENT_PATH \
   --style_path STYLE_PATH \
   --resize
