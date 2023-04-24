@@ -3,6 +3,8 @@
 
 We plan to create a very interesting demo by combining [Segment Anything](https://github.com/facebookresearch/segment-anything) and a series of style transfer models! We will continue to improve it and create more interesting demos. **Interesting ideas, results, and contributions are warmly welcome!**
 
+[[Arxiv]](https://arxiv.org/abs/2304.09728)
+
 ## Demo
 - Different contents can specify different styles in a style image. Left click to select an area and right click to exclude an area.
 
@@ -88,6 +90,14 @@ python -m pip install opencv-python
 ## Citation
 If you find this project helpful for your research, please consider citing the following BibTeX entry.
 ```BibTex
+
+@article{liu2023any,
+  title={Any-to-Any Style Transfer},
+  author={Liu, Songhua and Ye, Jingwen and Wang, Xinchao},
+  journal={arXiv preprint arXiv:2304.09728},
+  year={2023}
+}
+
 @article{kirillov2023segany,
     title={Segment Anything}, 
     author={Kirillov, Alexander and Mintun, Eric and Ravi, Nikhila and Mao, Hanzi and Rolland, Chloe and Gustafson, Laura and Xiao, Tete and Whitehead, Spencer and Berg, Alexander C. and Lo, Wan-Yen and Doll{\'a}r, Piotr and Girshick, Ross},
@@ -100,5 +110,12 @@ If you find this project helpful for your research, please consider citing the f
   author={Liu, Songhua and Lin, Tianwei and He, Dongliang and Li, Fu and Wang, Meiling and Li, Xin and Sun, Zhengxing and Li, Qian and Ding, Errui},
   booktitle={Proceedings of the IEEE International Conference on Computer Vision},
   year={2021}
+}
+
+@article{yu2023inpaint,
+  title={Inpaint Anything: Segment Anything Meets Image Inpainting},
+  author={Yu, Tao and Feng, Runseng and Feng, Ruoyu and Liu, Jinming and Jin, Xin and Zeng, Wenjun and Chen, Zhibo},
+  journal={arXiv preprint arXiv:2304.06790},
+  year={2023}
 }
 ```
