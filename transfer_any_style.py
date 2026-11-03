@@ -292,7 +292,7 @@ def main(args):
         nn.Conv2d(512, 512, (3, 3)),
         nn.ReLU()  # relu5-4
     )
-    image_encoder.load_state_dict(torch.load(vgg_path))
+    image_encoder.load_state_dict(torch.load(vgg_path, weights_only=True))
     enc_layers = list(image_encoder.children())
     enc_1 = nn.Sequential(*enc_layers[:4]).to(device)
     enc_2 = nn.Sequential(*enc_layers[4:11]).to(device)
@@ -307,9 +307,9 @@ def main(args):
     transformer = Transformer(in_planes=512, key_planes=512 + 256 + 128 + 64).to(device)
     decoder = Decoder().to(device)
     ada_attn_3 = AdaAttN(in_planes=256, key_planes=256 + 128 + 64, max_sample=64 * 64).to(device)
-    transformer.load_state_dict(torch.load(transformer_path))
-    decoder.load_state_dict(torch.load(decoder_path))
-    ada_attn_3.load_state_dict(torch.load(ada_attn_3_path))
+    transformer.load_state_dict(torch.load(transformer_path, weights_only=True))
+    decoder.load_state_dict(torch.load(decoder_path, weights_only=True))
+    ada_attn_3.load_state_dict(torch.load(ada_attn_3_path, weights_only=True))
     transformer.eval()
     decoder.eval()
     ada_attn_3.eval()
